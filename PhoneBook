@@ -1,0 +1,13 @@
+package com.college.addressbook;
+
+public class PhoneBook {
+
+    private String mName;
+    public PhoneBook(String mName){
+}
+    public void setName(String name) {
+        mName = name;
+    }
+    public String getName() {
+        return mName;
+    }}
