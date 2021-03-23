@@ -1,0 +1,29 @@
+package com.college.addressbook;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+
+import android.os.Bundle;
+import android.widget.ListView;
+
+public class MainActivity extends Activity {
+
+
+    private ListView lvname;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        List<PhoneBook> listPhoneBook = new ArrayList<PhoneBook>();
+        listPhoneBook.add(new PhoneBook(
+                ""));
+
+        PhoneBookAdapter adapter = new PhoneBookAdapter(this, listPhoneBook);
+        lvname.setAdapter(adapter);
+    }
+}
